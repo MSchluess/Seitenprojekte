@@ -5,15 +5,19 @@
 </title>
 
 <head>
+    <div style="text-align:center">
+        <h1>Wort Zähler</h1>
+        <script lang="javascript" src="wordCount.js"></script>
+    </div>
 </head>
 
 <body>
 
     <div style="text-align:center">
-        <h1>Wort Zähler</h1>
+
         <h2>Legen Sie ihr Dokument ab und wir sagen ihnen wie viele Worte es hat.</h2>
-        <script type="javascript" src="word_count.js"></script>
-        <input type="file" id="in" accept=".txt, .odt, .docx" onchange='countWords()' />
+        <input type="file" id="in" accept=".txt, .odt, .docx" onchange='countWords()' /><br /><br />
+        <label id="lab">Das Ergebnis wird hier angezeigt.</label>
 
     </div>
 </body>
