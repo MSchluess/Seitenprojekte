@@ -1,3 +1,4 @@
 function countWords() {
-    console.log("Lol");
+    var string = "lol";
+    console.log(string);
 }
