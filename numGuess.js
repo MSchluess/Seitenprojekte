@@ -3,7 +3,6 @@ function rangeDeclared() {
     var upper = document.getElementById('bis').value;
 
     if (lower == null || upper == null || lower >= upper) {
-        console.log('ERROR: Field empty or invalid numbers entered!');
         alert('ERROR: Field empty or invalid numbers entered!');
         return;
     }
@@ -12,5 +11,9 @@ function rangeDeclared() {
     document.getElementById('bis').disabled = true;
     document.getElementById('start1').disabled = true;
 
-    document.createElement()
+    var result = Math.floor(Math.random() * upper - lower) + lower;
+
+    var hiddenResultLabel = document.createElement('LABEL');
+    hiddenResultLabel.innerHTML = result;
+    document.body.appendChild(hiddenResultLabel);
 }
