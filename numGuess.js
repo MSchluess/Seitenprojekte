@@ -23,14 +23,14 @@ function rangeDeclared() {
     var guessField = document.createElement('INPUT');
     guessField.setAttribute('id', 'guessField');
     guessField.setAttribute('type', 'number');
-    document.getElementById('div').appendChild(br);
-    document.getElementById('div').appendChild(br);
-    document.getElementById('div').appendChild(guessField);
+    document.body.appendChild(br);
+    document.body.appendChild(br);
+    document.body.appendChild(guessField);
     //create solution button
     var guessButton = document.createElement('BUTTON');
     guessButton.innerText = 'Rate!';
     guessButton.setAttribute('onclick', 'solve()');
-    document.getElementById('div').appendChild(guessButton);
+    document.body.appendChild(guessButton);
 }
 
 function solve() {
@@ -46,11 +46,11 @@ function solve() {
         return;
     }
     //check wheater the given answere and give fitting output
-    document.getElementById('div').appendChild(br);
-    document.getElementById('div').appendChild(br);
-    document.getElementById('div').appendChild(br);
-    document.getElementById('div').appendChild(br);
+    document.body.appendChild(br);
+    document.body.appendChild(br);
+    document.body.appendChild(br);
+    document.body.appendChild(br);
     var rightLabel = document.createElement('LABEL');
     rightLabel.innerHTML = (ans == sol) ? "Korrekt!":"Falsch!";
-    document.getElementById('div').appendChild(rightLabel);
+    document.body.appendChild(rightLabel);
 }
