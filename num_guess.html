@@ -3,19 +3,24 @@
 <title>Zahlen Raten</title>
 
 <head>
-    <div style="text-align: center;">
+    <style>
+        .center {
+          text-align: center;
+        }
+        </style>
+    <div class='center'>
         <h1>Zahlen Raten</h1>
     </div>
     <script lang="javascript" src="numGuess.js"></script>
 </head>
 
 <body>
-    <div style="text-align: center;">
+    <div class='center' id="div">
         Leg die Reichweite der Zahl fest und errate dann in diesem Feld die Zahl.
         <br />
         <br />
         Von <input type="number" id="von"> bis <input type="number" id="bis">
-        <button id="start1" onclick="rangeDeclared()">Los!</button>
+        <button id="start1" onclick="rangeDeclared()">Los!</button> <br/>
     </div>
 </body>
 
