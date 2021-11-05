@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <title>Hight Calculator</title>
+    <head style="text-align: center;">
+        <h1>Hight Calculator</h1>
+        <script lang="js" src="hight_calc.js"></script>
+    </head>
+    <body style="text-align: center;">
+        Lege die Einheiten fest und trage dann die Menge ein. <br><br>
+
+        <label for="inputType">Choose Input Type</label>
+        <select id="inputType" multiple>
+            <option value="centimeter">Centimeter</option>
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="inch">Inch</option>
+            <option value="foot">Foot</option>
+            <option value="mile">Mile</option>
+            <option value="lightYear">Light Year</option>
+        </select>
+        <label>     </label>
+        <label for="outputType">Choose Output Type</label>
+        <select id="outputType" multiple>
+            <option value="Centimeter">Centimeter</option>
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="inch">Inch</option>
+            <option value="foot">Foot</option>
+            <option value="mile">Mile</option>
+            <option value="lightYear">Light Year</option>
+        </select> <br>
+
+        <input type="number" id="in" onchange="calc()">
+        <input type="number" id="out" readonly>
+    </body>
+</html>
