@@ -5,7 +5,7 @@ function countWords() {
         reader.readAsText(file[index]);
         reader.onload = function () {
             var resultAr = reader.result.split(' ');
-            document.getElementById('lab').innerHTML = resultAr.length-1;
+            document.getElementById('lab').innerHTML = resultAr.length+1;
         }
     }
 }
